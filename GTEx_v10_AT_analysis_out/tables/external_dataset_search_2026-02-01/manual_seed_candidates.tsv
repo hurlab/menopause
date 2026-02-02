@@ -1,0 +1,4 @@
+repository	accession	title	notes
+GEO	GSE86244	Human adipose stromal/stem cells RNA-seq (ASC); age proxy pre<45 vs post>55 (used in this repo)	Already analyzed (supplementary counts); ASC context mismatch vs bulk adipose.
+GEO	GSE44000	Adipose tissue dataset referenced in postmenopausal obesity/NETs paper (needs verification of cohort/tissue)	Candidate for mining; menopause status unclear without full metadata check.
+GEO	NA	Menopause SAT+VAT microarray in morbidly obese women (PMID:21358552; check if deposited)	May not have public deposition; could rely on supplemental tables or author contact.

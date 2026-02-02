@@ -1,0 +1,248 @@
+# History files
+.Rhistory
+.Rapp.history
+*.bak
+.codexignore
+
+# Session Data files
+*.RData
+*.RDataTmp
+
+# RDS files
+/GTEx_v10_AT_analysis_out/rds/*.rds
+/codex_tasks/
+/codex_tasks/*
+
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+# pkgdown site
+#docs/
+
+# Local project docs / working notes
+projDocs/
+
+# Keep external_data/ allowed, but ignore any single files >49MB.
+# (Git can't express size-based ignore rules, so list large files explicitly.)
+external_data/GSE44000/GPL6480_family.soft.gz
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+# Temporary
+*.Zone.Identifier
+node_modules/
+.moai/archive/
+*.tmp
+.moai/scripts/sync-*.sh
+*.key.*
+*.pyd
+!.env.example
+.DS_Store
+# Claude Code Local Configuration
+.moai/error_logs/
+*.db
+# Logs & Temporary Files
+*_backup_*/
+*.sqlite
+.claude/skills/*/secrets/
+*-api-key.*
+.DocumentRevisions-V100
+*.pfx
+.claude/local/
+*.pyc
+.moai/scripts/sync-*.py
+coverage.json
+!.moai/memory/**
+*.rdb
+*.backup
+.VolumeIcon.icns
+!.moai/config/**
+*.tsbuildinfo
+ehthumbs.db
+*.egg
+!.moai/specs/
+*.p12
+*.egg-info/
+htmlcov/
+*-secret-key.*
+.Spotlight-V100
+out/
+*.secret.*
+.AppleDouble
+# Legacy config format (migrated to YAML in v0.32.0)
+!.moai/config/
+.vscode/
+.env.*
+[Dd]esktop.ini
+build/
+*.suo
+.directory
+*.sw?
+.moai/config/config.json
+.moai/analytics/
+!.moai/scripts/**
+.moai/scripts/phase*.py
+# Old patterns caused false positives for: keyboard-config, hotkey, monkey-patch, etc.
+!.moai/specs/**
+*.sublime-project
+*.njsproj
+.vercel/
+.Trashes
+Thumbs.db
+# Tracked in git: config/, memory/, scripts/, specs/
+# ============================================
+.claude/skills/*/*/*token*
+.LSOverride
+# Environment Variables & Secrets
+*.sln
+.mypy_cache/
+.TemporaryItems
+.pytest_cache/
+# Virtual Environments
+.claude/settings.local.json
+.uv_cache/
+# .moai local development scripts (not distributed)
+.gitlab-ci.yml.bak
+.env/
+.cursor/
+*.sublime-workspace
+# Node.js (for docs/Nextra)
+# Test Coverage
+secret-key-*
+# MoAI Directory Management
+.moai/scripts/phase*.sh
+.moai/temp/
+# Cloud provider credentials
+# Purpose: Essential patterns for user projects
+.#*
+*.swp
+*.temp
+# FIXED: Issue #237 - Replaced overly broad *key* and *secret* patterns
+.next/
+.venv/
+# .moai local-only directories (user projects only)
+.moai/work/
+.moai/archived-skills/
+.coverage
+.moai/cache/
+*-backup/
+.moai/scripts/__pycache__/
+*-secret.*
+.claude/.env.local*
+venv/
+.uv-cache/
+*_key.*
+# Windows
+# Private keys and certificates (specific patterns to avoid false positives)
+.fseventsd
+.moai-backups/
+api-key-*
+secret-*.*
+*_secret=*
+!.moai/memory/
+*.pyo
+*.swo
+# OS Files
+*.backup/
+*.log
+.moai/docs/
+*.sqlite3
+.moai/logs/
+.claude/skills/*/*/*key*
+# Python Cache & Database
+# CI/CD
+.claude/skills/*/.env*
+# MoAI-ADK Package Distribution .gitignore
+__pycache__/
+.idea/
+*.dbm
+# uv.lock is intentionally included for reproducible builds
+.netlify/
+# Claude Code Skills Secrets
+# Add to .gitignore if needed per project
+# uv.lock
+.firebase/
+# Backups
+# IDE & Editors
+*.jks
+*_secret.*
+# ---------------------------------------------
+env/
+# Certificate files
+# Linux
+# API credentials patterns
+*.pem
+*_token=*
+*-key.*
+# Mac
+.github/workflows/*.yml.bak
+.moai/backups/
+.moai/reports/
+*~
+!.moai/scripts/
+.claude/settings.local.*.json
+# Version: 0.28.0
+.aws/credentials
+.ruff_cache/
+.moai/scripts/*sync*.sh
+.env
+logs/
+# User-generated content: logs/, cache/, reports/, etc.
+.tscache/
+.claude/skills/*/*/*secret*
+# Build Artifacts
+# Package Distribution
+dist/
+private-key*
+.aws/config
+# MoAI directories to track
+!.moai/specs/
+!.moai/config/
+!.moai/memory/
+!.moai/scripts/
+# MoAI directories to ignore
+.moai/analytics/
+.moai/archive/
+.moai/backups/
+.moai/cache/
+.moai/docs/
+.moai/error_logs/
+.moai/logs/
+.moai/reports/
+.moai/temp/
+.moai/work/

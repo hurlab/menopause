@@ -1,0 +1,4 @@
+ID	Description	GeneRatio	pvalue	p.adjust	qvalue	Count	ontology
+GO:0045109	intermediate filament organization	4/52	5.40358333709972e-5	0.04826709190830276	0.04165902026887833	4	GO-BP
+GO:0045104	intermediate filament cytoskeleton organization	4/52	1.4151806857736783e-4	0.04826709190830276	0.04165902026887833	4	GO-BP
+GO:0045103	intermediate filament-based process	4/52	1.473054686926839e-4	0.04826709190830276	0.04165902026887833	4	GO-BP

@@ -1,0 +1,8 @@
+set_name	gene_symbol
+# Example rows (delete/replace with your curated lists):
+# christoph_sns_markers	NR4A1
+# christoph_sns_markers	NR4A2
+# christoph_sns_markers	NR4A3
+# christoph_sns_markers	FOS
+# christoph_sns_markers	JUN
+# christoph_sns_markers	EGR1

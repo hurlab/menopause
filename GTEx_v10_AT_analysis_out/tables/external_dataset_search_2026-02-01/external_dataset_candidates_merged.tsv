@@ -1,0 +1,21 @@
+repository	accession	organism	n_samples	priority	title	source	notes
+GEO	GSE44000	NA	NA	manual	Adipose tissue dataset referenced in postmenopausal obesity/NETs paper (needs verification of cohort/tissue)	Manual	Candidate for mining; menopause status unclear without full metadata check.
+GEO	GSE86244	NA	NA	manual	Human adipose stromal/stem cells RNA-seq (ASC); age proxy pre<45 vs post>55 (used in this repo)	Manual	Already analyzed (supplementary counts); ASC context mismatch vs bulk adipose.
+GEO	NA	NA	NA	manual	Menopause SAT+VAT microarray in morbidly obese women (PMID:21358552; check if deposited)	Manual	May not have public deposition; could rely on supplemental tables or author contact.
+GEO (GDS)	GSE138512	Homo sapiens	4	low	Next Generation Sequencing Facilitates Quantitative Analysis of LAP2α deficient cells and control cells	GEO(gds)	menopause adipose RNA-seq
+GEO (GDS)	GSE141221	Homo sapiens	1196	low	Adipose tissue network analyses reveal negative association between GDF15 and BMI during weight management intervention.	GEO(gds)	menopause adipose tissue expression profiling
+GEO (GDS)	GSE2109	Homo sapiens	2158	low	Expression Project for Oncology (expO)	GEO(gds)	ovariectomy adipose gene expression
+GEO (GDS)	GSE237950	Rattus norvegicus	22	low	Data of RNA-seq transcriptomes of gastrocnemius muscle and epididymal adipose tissue in obese rats changes in hypoxic exercise environments	GEO(gds)	menopause adipose RNA-seq
+GEO (GDS)	GSE273407	Mus musculus	58	low	Adipose stem cells are sexually dimorphic cells with dual roles as preadipocytes and resident fibroblasts [FACS_castovary_ASC]	GEO(gds)	ovariectomy adipose gene expression
+GEO (GDS)	GSE28660	Homo sapiens	12	low	Differential gene expression in uterosacral ligament from patients with recurrent and primary pelvic organ prolapse	GEO(gds)	""postmenopausal"" adipose expression profiling
+GEO (GDS)	GSE64692	Rattus norvegicus	6	low	Gene expression profiles of hexadecyl-4-124I-iodobenzoate(124I-HIB)-labeled adipose-derived stem cells (ADSCs) in vitro and in vivo	GEO(gds)	menopause adipose microarray
+GEO (GDS)	GSE84046	Homo sapiens	44	low	The impact of protein quantity during energy restriction on genome-wide gene expression analysis in human adipose tissue	GEO(gds)	""postmenopausal"" ""subcutaneous adipose""
+GEO (GDS)	GSE156956	Homo sapiens	7	high	Sex-Dependent Obesity Reduction from PPARa Activation by PDE9 Inhibition	GEO(gds)	menopause adipose microarray
+GEO (GDS)	GSE194075	Mus musculus	15	high	High Fat Diet (HFD)-Induced Obesity Augments the Deleterious Effects of Estrogen Deficiency on Bone: Evidence from ovariectomized Mice.	GEO(gds)	menopause adipose RNA-seq
+GEO (GDS)	GSE262347	Mus musculus	18	high	Effect of lentiviral silencing of Rcor2 in MC3T3-E1 cells during osteoblast differentiation	GEO(gds)	ovariectomy adipose gene expression
+GEO (GDS)	GSE263849	Mus musculus	8	high	Aromatase in adipose tissue exerts osteoprotective function in male mice via phosphorus regulation	GEO(gds)	menopause adipose RNA-seq
+GEO (GDS)	GSE268528	Mus musculus	8	high	Ablation of hematopoietic stem cell derived adipocytes reduces tumor burden in a syngeneic mouse model of high grade serous carcinoma	GEO(gds)	""postmenopausal"" ""visceral adipose""
+GEO (GDS)	GSE296580	Mus musculus	16	high	GDF15 Expression in Thermogenic Adipocytes Regulates Energy Homeostasis in a Sex-dependent Manner	GEO(gds)	ovariectomy adipose gene expression
+GEO (GDS)	GSE43471	Homo sapiens	96	high	Gene expression changes in adipose tissue with diet- and/or exercise-induced weight loss	GEO(gds)	""postmenopausal"" ""subcutaneous adipose""
+GEO (GDS)	GSE44000	Homo sapiens	14	high	Transcriptome profile of subcutaneous adipocytes isolated from obese vs. lean postmenopausal women	GEO(gds)	""postmenopausal"" ""subcutaneous adipose""
+GEO (GDS)	GSE66159	Homo sapiens	76	high	Biomarkers of dietary energy restriction in women at increased risk of breast cancer	GEO(gds)	""premenopausal"" ""postmenopausal"" adipose

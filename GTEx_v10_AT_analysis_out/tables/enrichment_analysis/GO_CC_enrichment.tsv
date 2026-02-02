@@ -1,0 +1,2 @@
+ID	Description	GeneRatio	pvalue	p.adjust	qvalue	Count	ontology
+GO:0045095	keratin filament	4/56	2.9573508492505726e-4	0.03223512425683124	0.028639608224321336	4	GO-CC

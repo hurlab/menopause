@@ -1,0 +1,49 @@
+set_name	gene_symbol	category	source	notes
+acute_beta_adrenergic	NR4A1	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker (baseline tissue may show weak signal).
+acute_beta_adrenergic	NR4A2	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker.
+acute_beta_adrenergic	NR4A3	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker.
+acute_beta_adrenergic	FOS	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker.
+acute_beta_adrenergic	JUN	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker.
+acute_beta_adrenergic	EGR1	Acute_SNS_immediate_early	Kenichi_hypothesis_panel	Immediate-early response marker.
+adrenergic_receptors	ADRB1	Adrenergic_receptors	Kenichi_hypothesis_panel	Adrenergic receptor family member.
+adrenergic_receptors	ADRB2	Adrenergic_receptors	Kenichi_hypothesis_panel	Adrenergic receptor family member.
+adrenergic_receptors	ADRB3	Adrenergic_receptors	Kenichi_hypothesis_panel	Canonical adipose adrenergic receptor; chronic SNS can reduce ADRB3 (catecholamine resistance).
+adrenergic_receptors	ADRA2A	Adrenergic_receptors	Kenichi_hypothesis_panel	Alpha-2 adrenergic receptor; anti-lipolytic axis component.
+adrenergic_receptors	ADRA2B	Adrenergic_receptors	Kenichi_hypothesis_panel	Alpha-2 adrenergic receptor; anti-lipolytic axis component.
+adrenergic_receptors	ADRA2C	Adrenergic_receptors	Kenichi_hypothesis_panel	Alpha-2 adrenergic receptor; anti-lipolytic axis component.
+lipolysis_core	PNPLA2	Lipolysis_core	Kenichi_hypothesis_panel	ATGL.
+lipolysis_core	LIPE	Lipolysis_core	Kenichi_hypothesis_panel	HSL.
+lipolysis_core	MGLL	Lipolysis_core	Kenichi_hypothesis_panel	Monoacylglycerol lipase.
+lipolysis_core	ABHD5	Lipolysis_core	Kenichi_hypothesis_panel	CG I-58; ATGL co-activator.
+lipolysis_core	PLIN1	Lipolysis_core	Kenichi_hypothesis_panel	Perilipin; adipocyte lipid droplet protein (also used in adipocyte proxy).
+lipolysis_core	G0S2	Lipolysis_core	Kenichi_hypothesis_panel	ATGL inhibitor.
+lipolysis_core	LPL	Lipolysis_core	Kenichi_hypothesis_panel	Lipoprotein lipase; adipocyte-enriched in bulk.
+lipolysis_core	FABP4	Lipolysis_core	Kenichi_hypothesis_panel	Adipocyte-enriched lipid binding protein (also used in adipocyte proxy).
+thermogenesis_program	UCP1	Thermogenesis_program	Kenichi_hypothesis_panel	Brown/beige thermogenesis marker; low baseline in many human SAT samples.
+thermogenesis_program	PPARGC1A	Thermogenesis_program	Kenichi_hypothesis_panel	PGC-1α; mitochondrial/thermogenic program regulator.
+thermogenesis_program	PPARGC1B	Thermogenesis_program	Kenichi_hypothesis_panel	PGC-1β; mitochondrial program regulator.
+thermogenesis_program	CIDEA	Thermogenesis_program	Kenichi_hypothesis_panel	Beige/brown adipocyte program gene.
+thermogenesis_program	DIO2	Thermogenesis_program	Kenichi_hypothesis_panel	Thyroid hormone activation; thermogenesis-associated.
+thermogenesis_program	VEGFA	Thermogenesis_program	Kenichi_hypothesis_panel	Angiogenesis/vascular support; included as program component.
+myers2009_context	ACVR1	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	AKT2	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	CBL	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	CEBPA	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	FASN	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	GDF10	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	GYS1	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	HDAC5	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	HDAC7	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	IFNG	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	IL15	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	IRS1	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	LEP	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	PPARGC1B	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	PYGM	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	RAB18	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	SLC2A2	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	SLC2A4	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	SLC2A8	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	SMAD2	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	STAT5B	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).
+myers2009_context	UCP3	Context_metabolic_signaling	Myers2009_context_set	Additional context set included in scripts (not always shown on slides).

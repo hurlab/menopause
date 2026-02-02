@@ -1,0 +1,5 @@
+comparison	young	old	n_total	n_female	n_male	n_sig_male	n_sig_female	n_sig_interaction	n_menopause_enriched
+30-39_vs_50-59	30-39	50-59	292	92	200	601	223	20	5
+30-39_vs_60-69	30-39	60-69	293	86	207	3671	431	8	2
+40-49_vs_50-59	40-49	50-59	341	119	222	247	17	24	3
+40-49_vs_60-69	40-49	60-69	342	113	229	3389	35	150	9
