@@ -1,0 +1,3 @@
+depot	n	adipocyte_mean	adipocyte_median	adipocyte_max	adipocyte_pct_zero	frac_sum_mean
+subcutaneous	714	4.515392442403681e-5	0	0.0160735239857853	0.9943977591036415	1
+visceral	587	2.00164709172722e-4	0	0.0268547339885228	0.9812606473594548	1

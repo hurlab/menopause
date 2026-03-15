@@ -56,6 +56,8 @@ projDocs/
 # Keep external_data/ allowed, but ignore any single files >49MB.
 # (Git can't express size-based ignore rules, so list large files explicitly.)
 external_data/GSE44000/GPL6480_family.soft.gz
+external_data/GSE176171/GSE176171_Hs10X.counts.mtx.gz
+external_data/GSE281356/GSE281356_RAW.tar
 
 # translation temp files
 po/*~

@@ -1,0 +1,145 @@
+Here’s a reorganized, presentation-ready set of “what we did / what we found / what we do next,” plus a separate, standalone interpretation summary for the lipolysis genes vs protein changes and catecholamine resistance (the part cb1116 emphasized).
+
+PRESENTATION DETAILS (REORGANIZED)
+
+Objective and dataset framing (keep brief; one slide)
+You analyzed GTEx adipose transcriptomic data using an updated age-binning scheme aligned to a pre/peri/post concept.
+Current age bins used: <50 (pre), 50–60 (peri/middle), and 60+ (post/older). You noted this can be re-binned (e.g., 40–50 vs 60–70) if the group wants comparability to earlier analyses.
+
+Key data structure issue: two tissues + two sequencing centers (batch/center confounding) (1–2 slides)
+What you observed:
+There are two adipose depots (subcutaneous and visceral), and samples come primarily from two sequencing centers.
+The sequencing centers differ in sample counts and importantly in age distribution: one center has higher representation of younger subjects than the other, creating a confounding risk (center correlates with age).
+
+What this implies:
+This is not “pure technical batch” because the technical factor (center) is entangled with biology (age distribution). This makes aggressive batch correction risky.
+
+Proposed handling options (you explained both; 1 slide):
+Approach A (typical batch correction): normalize expression so centers match at baseline (e.g., SVA-like correction), then run differential analyses.
+Risk: may erase true biological signals, especially when age distributions differ across centers.
+Approach B (covariate adjustment): keep expression as-is, include sequencing center as a covariate in the model.
+Benefit: reduces risk of removing biological signal; more conservative given center–age confounding.
+You used Approach B for this analysis.
+
+Optional additional safeguard you mentioned:
+Exclude the youngest age strata entirely (e.g., 20–29 and 30–39) to reduce imbalance across centers, but you have not run this yet.
+
+Gene-set scoring strategy (core analytic method) (1 slide)
+The central question: for a given gene set, are its member genes systematically shifted up/down across samples in a condition/group?
+Method summary:
+For each gene, compute standardized expression relative to its distribution (z-score logic).
+Aggregate across genes in a gene set to get an average z-score (gene-set “signal”).
+Test whether that gene-set average differs across age groups vs what would be expected by chance.
+This is conceptually aligned with z-score heatmap scaling, but used here as a quantitative, comparable signal across gene sets.
+
+Main biological results so far (2–3 slides)
+4A) Lipolysis core gene set signal across age groups
+In subcutaneous adipose, the lipolysis core gene-set score shows a decreasing pattern with age (pre → peri → older/post).
+Some pairwise differences were statistically significant (not uniformly across all comparisons).
+In visceral adipose, the same gene sets showed fewer/no statistically significant shifts (overall weaker age-associated signal vs subcutaneous).
+
+Immediate “safe” takeaway for the slide:
+There is an age-associated downward shift in the lipolysis-core transcriptional signature in subcutaneous adipose, while visceral adipose shows weaker/less significant shifts.
+
+Important interpretive caution:
+Do not equate “lower transcription of lipolysis genes” with “lower lipolysis” (expanded in the cb1116 summary below).
+
+4B) Technical covariates beyond sequencing center (RIN, ischemic time, Hardy score, etc.)
+You added additional metadata-derived technical variables into the differential model to see if they materially change the gene-set signals.
+Bottom line: these additional variables have limited impact on the directionality of signals; center remains the major concern because it correlates with age.
+
+4C) Cell composition / tissue heterogeneity checks (marker-based, preliminary)
+Motivation:
+Bulk adipose is not pure adipocytes; variable proportions of fibroblasts, endothelial cells, macrophages, etc., can influence “differential signals.”
+What you did (quick screen):
+Used small marker sets (e.g., three markers per cell type) to evaluate whether marker-based expression patterns shift with age.
+What you saw:
+Some suggestive trends (e.g., adipocyte marker signal decreasing; fibroblast possibly increasing), but robustness/statistical significance not consistent.
+
+Cell-composition-as-covariate sensitivity test:
+When you include marker-based composition signals as covariates, some baseline-significant signals (including lipolysis/thermogenesis) can lose significance.
+Interpretation for discussion:
+This suggests some observed age effects could be partly explained by compositional shifts, but the marker-based approach is not definitive.
+
+Team guidance captured:
+cb1116 suggested not to over-index on composition uncertainty at this stage; proceed with straightforward gene expression interpretation, then refine later.
+
+Additional biological themes raised (senescence, inflammation, fibrosis, de novo lipogenesis) (1–2 slides)
+Senescence signature:
+Using a narrowed signature set (including a published senescence signature plus Kenichi-provided genes), senescence score increases in older groups; pre vs post differences were strong/significant by both scoring methods you used.
+Open question raised by cb1116:
+Stratify by sex—if male trajectory differs (or is absent), that supports a menopausal/estrogen-depletion-linked effect rather than general aging.
+
+Inflammation, fibrosis, de novo lipogenesis:
+cb1116 emphasized these as canonical “adipose dysfunction” categories that often worsen with metabolic decline and may be driven by sympathetic tone.
+Action item: Kenichi to send curated gene lists for inflammation and de novo lipogenesis; you can also use established public gene sets.
+
+Discussion: what to do next (prioritized action list; “next steps” slide)
+A. Resolve/quantify the sequencing-center confounding
+Run sensitivity analyses:
+(1) Re-run key results with alternative age bins (including the previously used 40–50 vs 60–70) for comparability.
+(2) Drop youngest strata (20–29, 30–39) and re-check whether lipolysis/thermogenesis/senescence signals persist.
+(3) Compare: center-as-covariate model vs a batch-corrected model (SVA-like) as a sensitivity check, explicitly documenting which signals disappear under aggressive correction.
+
+B. Adrenergic receptor specificity (catecholamine resistance linkage)
+Explicitly analyze ADRB1, ADRB2, ADRB3 (and consider separating alpha vs beta receptor families to avoid cancellation).
+Plot individual gene expression (not only gene-set) across age bins, tissue depots, and sex strata.
+
+C. Male vs female stratification (requested explicitly for senescence; useful broadly)
+Generate sex-stratified trajectories for:
+Senescence signature
+Adrenergic receptor genes
+Key pathways: cyclic AMP/PKA signaling proxies, lipolysis core, thermogenesis
+Goal: distinguish menopause-linked effects from general age effects.
+
+D. Cell composition: do it properly (deconvolution)
+Use a strong single-nucleus reference (you mentioned a 2025 Nature adipose atlas) to perform computational deconvolution (e.g., CIBERSORT-like).
+Deliverables:
+(1) Fraction estimates vs age (do adipocytes decline; fibroblasts/macrophages rise?).
+(2) Re-run differential models with fraction covariates.
+(3) Optional: compute deconvolved “adipocyte-only” expression profiles and test age effects within the adipocyte compartment.
+
+E. Expand to “adipose dysfunction” panels
+Once Kenichi sends gene lists, run the same standardized gene-set scoring for:
+Metabolic inflammation (e.g., IL1/IL6/TNF axis, etc.)
+Fibrosis/fibrogenic markers
+De novo lipogenesis
+Then compare subcutaneous vs visceral and female vs male patterns.
+
+F. External validation and translational bridge to mouse models (strategic next phase)
+Near-term (public data): identify and analyze mouse adipose RNA-seq datasets comparing OVX vs sham (and potentially diet contexts).
+Longer-term (new experiment): consider bulk RNA-seq (or snRNA-seq) on existing frozen tissues in a 2×2 design:
+OVX vs non-OVX
+TH knockout (peripheral catecholamine-deficient) vs WT
+Rationale: isolate which OVX-associated expression changes are mediated by sympathetic outflow/catecholamines.
+
+SEPARATE SUMMARY (cb1116): INTERPRETING LIPOLYSIS GENE/PROTEIN CHANGES + CATECHOLAMINE RESISTANCE
+
+Core message: lower mRNA for “lipolysis genes” does not imply lower lipolysis.
+cb1116 strongly cautioned against concluding that decreased expression of lipolytic genes (ATGL/PNPLA2, HSL/LIPE, etc.) means reduced lipolytic flux. Lipolysis is primarily regulated acutely and functionally through protein phosphorylation and signaling dynamics, not by transcriptional abundance alone.
+
+Why decreased lipolysis-gene expression could happen when lipolysis is high (the paradox)
+In chronic states of elevated sympathetic activation (classic example: obesity; possibly also long-term metabolic stress), tissues can develop catecholamine resistance (reduced responsiveness to adrenergic stimulation).
+A hallmark mechanism is down-regulation of adrenergic receptors (and/or desensitization of downstream signaling), which reduces signaling despite high sympathetic tone.
+
+How this relates to what you’re seeing
+Your human subcutaneous analysis shows a downward transcriptional shift in a “lipolysis core gene set” with age/post-menopause groupings.
+cb1116 argued that this pattern may be more intuitively interpreted as an adaptive/chronic-response signature consistent with catecholamine resistance, rather than a direct readout of reduced lipolysis.
+
+Protein-level nuance (why mRNA and proteins can both mislead if interpreted simplistically)
+cb1116 referenced that, in their long-standing high-fat diet context, protein abundance of lipolytic proteins can be reduced, which seems paradoxical if one assumes lipolysis has been chronically elevated.
+This reduction in lipolytic protein expression could itself be a signature or consequence of catecholamine resistance (receptor down-regulation → reduced signaling → adaptive downshift in pathway components), but cb1116 emphasized they have not systematically proven this across the board.
+
+Which genes are most informative for catecholamine resistance (per cb1116 + Kenichi discussion)
+Adrenergic receptor genes, especially beta-adrenergic receptors, are the most established transcriptional indicators:
+cb1116 highlighted beta-2 initially, then the discussion converged on beta-3 being strongly down-regulated in adipose (with beta-2 also relevant in Kenichi’s data).
+Mechanistic rationale: reduced receptor expression → reduced receptor protein → reduced adrenergic signaling → contributes to catecholamine resistance.
+For downstream lipolysis genes (ATGL/HSL etc.), the relationship to catecholamine resistance is less direct and less “diagnostic.”
+
+Practical implications for your next analysis/presentation
+When presenting “lipolysis gene-set down,” phrase it as:
+A transcriptional downshift in lipolysis-related genes with aging/post-menopause that may reflect altered adrenergic tone/signaling adaptation (potential catecholamine resistance), rather than reduced lipolysis per se.
+Immediately pair it with the planned follow-up:
+Explicit receptor-level analysis (ADRB1/2/3; consider separating alpha vs beta receptor sets).
+Downstream signaling proxies (cAMP/PKA-related gene sets).
+If available, integrate protein/phosphorylation evidence (because phosphorylation is closer to functional lipolysis control).

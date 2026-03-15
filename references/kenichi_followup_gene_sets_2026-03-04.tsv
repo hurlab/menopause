@@ -1,0 +1,12 @@
+set_name	category	genes	source_note
+inflammation_cytokines	inflammation	IL6,TNF,IL1B,CCL2,NOS2	Kenichi DOCX (pro-inflammatory cytokines)
+macrophage_markers	inflammation	CD68,CD14,ITGAX,ADGRE1	Kenichi DOCX (CD11c->ITGAX; F4/80->ADGRE1)
+fibrosis_ecm	fibrosis	COL1A1,COL3A1,COL4A1,COL5A1,COL5A2,COL6A1,COL6A2,COL6A3,COL14A1,COL15A1,COL16A1,FN1,ITGAX,ITGB2,LGALS3,LOX,LOXL2,MMP2,MMP3,MMP9,MMP12,MMP13,MMP14,MMP19,PCOLCE,PCOLCE2,PPARG,TGFB1,TIMP1,HIF1A	Kenichi DOCX (pro-fibrosis)
+senescence_ovx	senescence	CDKN1A,CDKN2A,GPNMB	Kenichi DOCX (senescence)
+dnl_lipogenesis	metabolism	FASN,ACLY,ACACA,SREBF1,MLXIPL,SCD	Kenichi DOCX (DNL)
+adrenergic_beta	adrenergic	ADRB1,ADRB2,ADRB3	Kenichi email/DOCX
+adrenergic_alpha2	adrenergic	ADRA2A,ADRA2B,ADRA2C	Kenichi email/DOCX
+tgfb_alk7_axis	catecholamine_resistance	TGFB1,ACVR1C,SMAD2,SMAD3,SMAD4	Kenichi email + Reilly/Saltiel 2017
+tnf_ikk_tbk_pde3b_axis	catecholamine_resistance	TNF,NFKB1,RELA,IKBKB,IKBKE,TBK1,PDE3B	Kenichi email + Reilly/Saltiel 2017
+lipolysis_nodes	metabolism	PNPLA2,LIPE,MGLL,PLIN1,ABHD5	Project context
+thermogenesis_nodes	metabolism	UCP1,PPARGC1A,CIDEA,DIO2	Project context

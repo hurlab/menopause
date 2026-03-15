@@ -1,0 +1,34 @@
+• Item #2 (Adrenergic receptor expression heatmaps; depot/sex/age)
+
+  - Script: R/next_steps_2026-02-28_adrenergic_receptor_expression_heatmaps.R
+  - Heatmaps (faceted by sex x depot, x-axis = GTEx age bins):
+      - Beta (ADRB): heatmap_ADRB1_ADRB2_ADRB3_meanVST_by_depot_sex_agebin.png
+      - Alpha2 (ADRA2): heatmap_ADRA2A_ADRA2B_ADRA2C_meanVST_by_depot_sex_agebin.png
+  - Table (group means): adrenergic_receptor_expression_group_means_vst.tsv
+
+  Item #3 (Slides 7–8 style, but showing Male vs Female)
+
+  - Script: R/next_steps_2026-02-28_kenichi_panel_by_sex_slides7_8_style.R
+  - Slide-style figures (lipolysis + thermogenesis; facet by sex):
+      - Subcutaneous: figure_candidate__lipolysis_thermogenesis__by_sex.png
+      - Visceral: figure_candidate__lipolysis_thermogenesis__by_sex_visceral.png
+  - Per-sex LM p-values table: kenichi_panel_lm_pvalues_by_sex.tsv
+
+  Item #4 (Cell fractions via CIBERSORT; first pass)
+
+  - I used GSE176171 as the initial reference because it includes a ready-to-use combined human count matrix + a cell-level metadata table with broad cell types. (The
+    GSE281356 download is raw 10X .h5 matrices without provided cell-type labels in GEO, so it’s not a good “smallest-start” for CIBERSORT without re-annotating.)
+  - Script: R/next_steps_2026-02-28_cibersort_cell_fractions_adipose_reference_GSE176171.R
+  - Signature used (TopN=50 markers/cell-type; CPM; Ensembl IDs without version):
+    signature_topN50_cpm_noversion.tsv.gz
+  - Fractions + plots:
+      - Subcutaneous:
+          - Fractions CSV: cibersort_subcutaneous_perm0_topN50_minCells200__cibersort_fractions.csv
+          - Fractions + meta: cibersort_subcutaneous_perm0_topN50_minCells200__fractions_with_meta.tsv.gz
+          - Mean-by-sex-age plot: cibersort_subcutaneous_perm0_topN50_minCells200__fractions_mean_by_sex_agebin.png
+      - Visceral:
+          - Fractions CSV: cibersort_visceral_perm0_topN50_minCells200__cibersort_fractions.csv
+          - Fractions + meta: cibersort_visceral_perm0_topN50_minCells200__fractions_with_meta.tsv.gz
+          - Mean-by-sex-age plot: cibersort_visceral_perm0_topN50_minCells200__fractions_mean_by_sex_agebin.png
+
+  Quick index of all outputs: docs/next_steps_2026-02-28_items_2_3_4_outputs.md
